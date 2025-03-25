@@ -85,8 +85,20 @@
       </div>
     </div>
   </section>
-  <section>
-    <section class="section-4" id="secao-compra">
+<section>
+  <style>
+    .section-4 {
+        display: none; /* Oculta até o tempo passar */
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: calc(75% + 50px); /* Apenas 5px maior que o botão */
+        background: none; /* Remove fundo */
+        padding-top: 50px; /* Padding para cima */
+        padding-bottom: 10px; /* Padding para baixo */
+    }
+</style>
+  <section class="section-4" id="secao-compra">
     <button id="botao-compra" onclick="window.location.href='https://pay.hotmart.com/I96566685U?off=8lx2igbo&checkoutMode=10'">
         I Want Natural Mounjaro Now!
     </button>
@@ -100,6 +112,7 @@
         width: 100%;
         height: calc(100% + 5px); /* Apenas 5px maior que o botão */
         background: none; /* Remove fundo */
+		padding 50px
     }
 
     #botao-compra {
@@ -123,7 +136,7 @@
     @media (max-width: 600px) {
         #botao-compra {
             font-size: 16px;
-            padding: 12px 24px;
+            padding: 50px 24px;
         }
     }
 </style>
@@ -131,7 +144,7 @@
 <script>
     setTimeout(function() {
         document.getElementById("secao-compra").style.display = "flex"; // Exibe a seção após 26m25s
-    }, (26 * 60 + 25) * 1000); // Tempo convertido para milissegundos
+    }, 300); // Tempo convertido para milissegundos
 </script>
 
 </section>
