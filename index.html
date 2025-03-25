@@ -86,9 +86,56 @@
     </div>
   </section>
   <section>
-    <section class="section-4">
-        <div class="w-layout-blockcontainer w-container">
-          <a href="https://pay.hotmart.com/I96566685U?checkoutMode=10" class="button w-button">I Want Natural Mounjaro Now!</a>
+    <section class="section-4" id="secao-compra">
+    <button id="botao-compra" onclick="window.location.href='https://pay.hotmart.com/I96566685U?off=8lx2igbo&checkoutMode=10'">
+        I Want Natural Mounjaro Now!
+    </button>
+</section>
+
+<style>
+        .section-4 {
+        display: none; /* Oculta até o tempo passar */
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: calc(75% + 50px); /* Apenas 5px maior que o botão */
+        background: none; /* Remove fundo */
+        padding-top: 50px; /* Padding para cima */
+        padding-bottom: 0px; /* Padding para baixo */
+    }
+
+    #botao-compra {
+        padding: 15px 30px; /* Ajusta tamanho do botão */
+        font-size: 20px; /* Texto responsivo */
+        font-weight: bold;
+        color: #ffffff; /* Letras brancas */
+        background-color: #28a745; /* Verde */
+        border: none;
+        cursor: pointer;
+        transition: transform 0.3s, box-shadow 0.3s;
+        max-width: 90%; /* Evita que fique muito grande em telas pequenas */
+        text-align: center;
+    }
+
+    #botao-compra:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 600px) {
+        #botao-compra {
+            font-size: 16px;
+            padding: 12px 24px;
+        }
+    }
+</style>
+
+
+<script>
+    setTimeout(function() {
+        document.getElementById("secao-compra").style.display = "flex"; // Exibe a seção após 26m25s
+    }, (26 * 60 + 25) * 1000); // Tempo convertido para milissegundos
+</script>
         </div>
       </section>
       <div class="w-layout-blockcontainer w-container">
